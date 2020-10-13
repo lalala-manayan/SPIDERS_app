@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title
+      | SPIDERSApp
+    = csrf_meta_tags
+    = csp_meta_tag
+    |  <script src = "https://js.pay.jp/", type = "text/javascript">
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    header
+      h1
+        | 名古屋SPIDERS
+      ul
+        li
+          | 名古屋SPIDERSとは
+        li
+          | クラウドファンディング
+        li
+          | メンバー紹介
+        li
+          | お知らせ
+        li
+          | お問い合わせ
+    = yield

@@ -1,0 +1,21 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @member.name
+p
+  strong
+    | Cheername:
+  = @member.cheername
+p
+  strong
+    | Generation:
+  = @member.generation
+p
+  strong
+    | Content:
+  = @member.content
+= link_to 'Edit', edit_member_path(@member)
+|  | 
+= link_to 'Back', members_path
