@@ -19,6 +19,8 @@ gem 'bootstrap'
 gem 'slim-rails'
 gem 'html2slim'
 gem 'payjp'
+gem 'jquery-rails'
+gem 'bootstrap-sass'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

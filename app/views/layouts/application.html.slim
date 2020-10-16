@@ -5,22 +5,16 @@ html
       | SPIDERSApp
     = csrf_meta_tags
     = csp_meta_tag
-    |  <script src = "https://js.pay.jp/", type = "text/javascript">
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    header
-      h1
-        | 名古屋SPIDERS
-      ul
-        li
-          | 名古屋SPIDERSとは
-        li
-          | クラウドファンディング
-        li
-          | メンバー紹介
-        li
-          | お知らせ
-        li
-          | お問い合わせ
+    header.site-header
+        = image_tag("IMG_1748.PNG",alt:"SPIDERS STAGE 2020",class:"site-logo")
+        nav.gnav
+          ul.gnav__menu
+            li.gnav__menu__item = link_to "SPIDERS STAGEとは" , '/'
+            li.gnav__menu__item = link_to "メンバー紹介",members_path
+            li.gnav__menu__item = link_to "オンライン物販",'/'
+            li.gnav__menu__item = link_to "お知らせ",'/'
+            li.gnav__menu__item = link_to "お問い合わせ",'/'
     = yield

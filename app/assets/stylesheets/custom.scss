@@ -1,0 +1,23 @@
+// header
+.site-header{
+  background: #fff;
+  display: flex;
+  padding: 60px 20px;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+}
+.site-logo{
+  height: 20px;
+  width: auto;
+}
+.gnav__menu{
+  display: flex;
+}
+.gnav__menu__item{
+  margin-left: 20px;
+}
+.gnav__menu__item{
+  color: #333;
+  text-decoration: none;
+}
